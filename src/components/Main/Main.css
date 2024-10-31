@@ -1,0 +1,67 @@
+/* Đặt form ở giữa màn hình */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Tạo khung cho form */
+form {
+    width: 300px;
+    padding: 2rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Đặt khoảng cách giữa các phần tử */
+form div {
+    margin-bottom: 1.5rem;
+}
+
+/* Style cho label */
+label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Style cho input */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Hiệu ứng khi input được focus */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+/* Style cho nút submit */
+button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #3b82f6;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hiệu ứng khi hover nút */
+button[type="submit"]:hover {
+    background-color: #2563eb;
+}
